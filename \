@@ -1,0 +1,19 @@
+def checkSurrounding(i,j,mat):
+    for k in range(i-1,i+1):
+        for l in range(j-1,j+1):
+            print(k,l,mat[k][l])
+            if k >0 and k <len(lines):
+                if l > 0 and l<len(lines[0]):
+                    if mat[k][l] not in '.0123456789':
+                        return True
+    return False
+matrix= [[1,2,3],[1,2,3],[1,2,3],[1,2,3]]
+checkSurrounding(1,1,matrix)
+with open('day3input.txt') as f:
+    lines = f.readlines()
+    total = 0
+    for i in range(len(lines)):
+        for j in range(len(lines[0])):
+            if j > 0:
+                if i >0:
+                    print('asdf')
